@@ -104,8 +104,13 @@ img {
 
   border-bottom: 1px solid var(--header-line-color);
 }
+.header__link.logo {
+  /* увеличение кликкабельной области */
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
 }
@@ -132,14 +137,8 @@ img {
   margin: 0;
 }
 
-/* увеличение кликкабельной области */
-.header-link {
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
-
 /* мыло тел в строку */
-.header-link.link {
+.header__link.link {
   display: flex;
   align-items: center;
   /* компенсация падинга навигации футер */
@@ -220,14 +219,15 @@ img {
   margin-right: 93px;
 }
 
-.logo-secondary {
+/* блок logo */
+.logo__secondary {
   color: var(--header-hero-color);
 }
 
-.logo-primary {
+.logo__primary {
   color: var(--title-color);
 }
-
+/* конец блок logo */
 .hero {
   max-width: 1600px;
   background-color: var(--header-bg);
