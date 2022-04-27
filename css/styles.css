@@ -120,12 +120,6 @@ img {
   display: flex;
 }
 
-/* .nav__list.link {
-  color: var(--title-color);
-  переход
-  transition: color var(--animation);
-} */
-
 .nav__item {
   margin-right: 50px;
   position: relative;
@@ -154,12 +148,13 @@ img {
 }
 /* конец блока навигации */
 
-/* contact block */
+/* блок контактов */
 .contact__list {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
+
 /* расстояние между мылом и тел */
 .contact__item {
   margin-right: 50px;
@@ -181,6 +176,19 @@ img {
 .contact__item:last-child {
   margin: 0;
 }
+
+/* стили для футера */
+.contact__list.bottom {
+  flex-direction: column;
+  align-items: normal;
+}
+
+.contact__item.bottom {
+  margin-right: 0;
+  margin-bottom: 9px;
+  color: var(--footer-contact);
+}
+
 /* конец блока контактов */
 
 /* акцент при ховере и фокусе */
@@ -505,7 +513,7 @@ img {
 .exemple-img {
   margin-left: 30px;
 }
-
+/* блок футер */
 .footer {
   background-color: var(--background-hero-footer);
   color: var(--header-hero-color);
@@ -514,7 +522,7 @@ img {
   padding-bottom: 60px;
 }
 
-.footer-adress {
+.footer__adress {
   font-style: normal;
   margin-bottom: 9px;
 }
@@ -537,7 +545,7 @@ img {
   margin-bottom: 9px;
 }
 
-.footer-logo-wrapper {
+.footer__link {
   display: inline-block;
   margin-bottom: 20px;
   margin-right: 0;
@@ -552,7 +560,7 @@ img {
   margin-bottom: 20px;
 }
 
-.list-footer.container {
+.footer__list.container {
   display: flex;
   align-items: baseline;
 }
