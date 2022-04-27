@@ -115,57 +115,91 @@ img {
   align-items: center;
 }
 
-.header__list {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
 /* блок навигации */
 .nav__list.list {
   display: flex;
 }
 
-.nav__list.link {
+/* .nav__list.link {
   color: var(--title-color);
-  /* переход */
+  переход
   transition: color var(--animation);
-}
+} */
 
 .nav__item {
   margin-right: 50px;
   position: relative;
 }
 
-.nav__list a:hover,
-.nav__list a:focus {
-  color: var(--accent-color);
-}
-/* конец блока навигации */
-
-/* расстояние между мылом и тел */
-.header__item {
-  margin-right: 50px;
-}
-
-/* растояние между иконками и kонтаkтами
- цвет иконки */
-.header__icon {
-  margin-right: 10px;
-  fill: currentColor;
-}
-
-.header-contact:last-child,
-.header-nav:last-child {
-  margin: 0;
-}
-
-/* мыло тел в строку */
-.header__link.link {
+/* навигация в строку */
+.nav__link.link {
   display: flex;
   align-items: center;
   /* компенсация падинга навигации футер */
   padding-top: 28px;
   padding-bottom: 28px;
+}
+
+/* мыло тел в строку */
+.nav__link.link {
+  display: flex;
+  align-items: center;
+  /* компенсация падинга навигации футер */
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+.nav__list:last-child {
+  margin: 0;
+}
+/* конец блока навигации */
+
+/* contact block */
+.contact__list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+/* расстояние между мылом и тел */
+.contact__item {
+  margin-right: 50px;
+}
+
+/* растояние между иконками и kонтаkтами
+ цвет иконки */
+.contact__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+/* иконки контакты в центр */
+.contact__link.link {
+  display: flex;
+  align-items: center;
+}
+
+.contact__item:last-child {
+  margin: 0;
+}
+/* конец блока контактов */
+
+/* акцент при ховере и фокусе */
+/* .nav__list a:hover,
+.nav__list a:focus {
+  color: var(--accent-color);
+} */
+/* .accent,
+.accent {
+  color: var(--title-color);
+   переход 
+  transition: color var(--animation);
+} */
+
+.accent a:hover,
+.accent a:focus {
+  color: var(--accent-color);
+  /* переход */
+  transition: color var(--animation);
 }
 
 /* полоска в хедере */
@@ -194,22 +228,12 @@ img {
   color: var(--accent-color);
 }
 
-/* текущаяя страница полоска в хедере */
+/* текущаяя страница полоска в хедере еффект */
 .effect.link.current::after {
   transform: scaleX(1);
 }
 
-.header-contact a.link {
-  color: var(--txt-color);
-  /* переход */
-  transition: color var(--animation);
-}
-
-.header-contact a:hover,
-.header-contact a:focus {
-  color: var(--accent-color);
-}
-
+/* блок logo */
 .logo {
   color: var(--accent-color);
   text-decoration: none;
@@ -221,7 +245,6 @@ img {
   margin-right: 93px;
 }
 
-/* блок logo */
 .logo__secondary {
   color: var(--header-hero-color);
 }
