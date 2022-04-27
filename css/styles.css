@@ -120,6 +120,28 @@ img {
   align-items: center;
   margin-left: auto;
 }
+/* блок навигации */
+.nav__list.list {
+  display: flex;
+}
+
+.nav__list.link {
+  color: var(--title-color);
+  /* переход */
+  transition: color var(--animation);
+}
+
+.nav__item {
+  margin-right: 50px;
+  position: relative;
+}
+
+.nav__list a:hover,
+.nav__list a:focus {
+  color: var(--accent-color);
+}
+/* конец блока навигации */
+
 /* расстояние между мылом и тел */
 .header-contact {
   margin-right: 50px;
@@ -144,26 +166,6 @@ img {
   /* компенсация падинга навигации футер */
   padding-top: 28px;
   padding-bottom: 28px;
-}
-
-.header-nav {
-  margin-right: 50px;
-  position: relative;
-}
-
-.header-nav-site {
-  display: flex;
-}
-
-.header-nav-site .link {
-  color: var(--title-color);
-  /* переход */
-  transition: color var(--animation);
-}
-
-.header-nav-site a:hover,
-.header-nav-site a:focus {
-  color: var(--accent-color);
 }
 
 /* полоска в хедере */
