@@ -160,7 +160,7 @@ img {
   margin-right: 50px;
 }
 
-/* растояние между иконками и kонтаkтами
+/* растояние между kонтаkтами
  цвет иконки */
 .contact__icon {
   margin-right: 10px;
@@ -173,20 +173,21 @@ img {
   align-items: center;
 }
 
-.contact__item:last-child {
-  margin: 0;
-}
-
 /* стили для футера */
-.contact__list.bottom {
+
+.footer__list .contact__list {
   flex-direction: column;
   align-items: normal;
 }
 
-.contact__item.bottom {
+.footer__list .contact__item {
   margin-right: 0;
   margin-bottom: 9px;
   color: var(--footer-contact);
+}
+/* обрезка крайнего маржина */
+.contact__item:last-child {
+  margin: 0;
 }
 
 /* конец блока контактов */
@@ -412,24 +413,24 @@ img {
 }
 /* блок иконки соцсетей */
 /* позицианирование иконок */
-.items {
+.socials__list {
   display: flex;
   justify-content: center;
 }
 /* иконки блочные, размеры их */
-.items-item {
+.socials__item {
   height: 44px;
   width: 44px;
   margin-right: 10px;
 }
 
 /* убираем крайний отступ */
-.items-item:last-child {
+.socials__item:last-child {
   margin-right: 0;
 }
 
 /* центрирование иконок */
-.items-link {
+.socials__link {
   display: flex;
   border-radius: 50%;
   background-color: var(--header-hero-color);
@@ -440,16 +441,15 @@ img {
   /* переход */
   transition: color var(--animation), background-color var(--animation);
 }
+
 /* форматирование для футера */
-.footer .items-link {
+.footer .socials__link {
   background-color: var(--footer-bg-icon);
-  /* переход */
-  transition: color var(--animation), background-color var(--animation);
 }
 
 /* изменение цвета иконок */
-.items-link:hover,
-.items-link:focus {
+.socials__link:hover,
+.socials__link:focus {
   background-color: var(--accent-color);
   color: var(--header-hero-color);
   fill: currentColor;
@@ -527,31 +527,13 @@ img {
   margin-bottom: 9px;
 }
 
-.footer-contact a.link {
-  color: var(--footer-contact);
-  transition: color var(--animation);
-}
-
-.footer-contact a.link:hover,
-.footer-contact a.link:focus {
-  color: var(--accent-color);
-}
-
-.footer-contact-wrapper:last-child {
-  margin: 0;
-}
-
-.footer-contact-wrapper {
-  margin-bottom: 9px;
-}
-
 .footer__link {
   display: inline-block;
   margin-bottom: 20px;
   margin-right: 0;
 }
 
-.footer-title {
+.footer__title {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -565,15 +547,16 @@ img {
   align-items: baseline;
 }
 
-.footer-wrapper-icon {
+.footer__socials {
   margin-left: 70px;
 }
 
-.footer-wrapper-form {
+/* форматирование формы подписки футер начало */
+.footer__user {
   margin-left: 93px;
 }
-/* форматирование формы подписки футер начало */
-.footer-form {
+
+.footer__form {
   display: flex;
   height: 50px;
 
@@ -581,16 +564,16 @@ img {
   line-height: 20px;
 }
 
-.footer-form input::placeholder {
+.footer__form input::placeholder {
   padding-left: 16px;
 }
 
-.footer-form button:hover,
-.footer-form button:focus {
+.footer__form button:hover,
+.footer__form button:focus {
   background-color: var(--accent-color-hover);
 }
 
-.footer-input {
+.footer__input {
   width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -600,7 +583,7 @@ img {
   background-color: var(--background-hero-footer);
 }
 
-.footer-btn {
+.footer__btn {
   width: 200px;
   margin-left: 12px;
   padding-left: 29px;
@@ -625,7 +608,7 @@ img {
   cursor: pointer;
 }
 
-.footer-icon-telegram {
+.footer__icon {
   margin-left: 10px;
 }
 /* форматирование формы подписки футер конец */
