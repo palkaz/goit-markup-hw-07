@@ -136,10 +136,8 @@ img {
 .header-link {
   padding-top: 24px;
   padding-bottom: 25px;
-
-  /* test */
-  /* border-bottom: 5px solid #f44336; */
 }
+
 /* мыло тел в строку */
 .header-link.link {
   display: flex;
@@ -743,7 +741,7 @@ p.cards-overlay {
 /* модальное окно */
 .backdrop {
   position: fixed;
-  /* нужен чтобы на форма в футере не наезжала */
+  /* нужен чтобы форма в футере не наезжала */
   z-index: 1;
 
   overflow: hidden;
@@ -815,7 +813,7 @@ p.cards-overlay {
   transition: fill var(--animation);
 }
 
-/* форматирование формы героя */
+/* форматирование формы бекдропа */
 textarea {
   resize: none;
 }
@@ -879,7 +877,7 @@ textarea {
   letter-spacing: 0.01em;
   margin-bottom: 4px;
 
-  color: rgba(117, 117, 117, 1);
+  color: var(--txt-color);
 }
 
 .textarea-form-field.comment {
@@ -933,7 +931,7 @@ textarea {
 .checkbox-label {
   display: flex;
   margin-left: 13px;
-  color: rgba(117, 117, 117, 1);
+  color: var(--txt-color);
   align-items: center;
 }
 
