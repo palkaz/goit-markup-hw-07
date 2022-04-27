@@ -115,7 +115,7 @@ img {
   align-items: center;
 }
 
-.header-contact-site {
+.header__list {
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -143,13 +143,13 @@ img {
 /* конец блока навигации */
 
 /* расстояние между мылом и тел */
-.header-contact {
+.header__item {
   margin-right: 50px;
 }
 
 /* растояние между иконками и kонтаkтами
  цвет иконки */
-.icon-contact {
+.header__icon {
   margin-right: 10px;
   fill: currentColor;
 }
