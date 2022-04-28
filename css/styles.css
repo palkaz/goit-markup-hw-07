@@ -33,7 +33,7 @@ body {
 
 /* правильное скрытие заголовка */
 .portfolio,
-.hidden-h {
+.benefits__header {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -545,7 +545,9 @@ textarea {
 /* конец кнопки бекдропа */
 
 /* конец backdrop */
-.benefits-title {
+
+/* секция преимущества */
+.benefits__title {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -557,13 +559,13 @@ textarea {
 .benefits {
   padding-top: 94px;
 }
-/* размещение иконок герой*/
-.benefits-wrapper,
+/* размещение иконок преимущества*/
+.benefits__list,
 .clients-wrapper {
   display: flex;
 }
 
-.benefits-wrapper-benefits {
+.benefits__wrapper {
   margin-bottom: 30px;
   display: flex;
   min-height: 120px;
@@ -575,12 +577,12 @@ textarea {
 }
 
 /* отступ между колонами */
-.benefits-column {
+.benefits__column {
   margin-right: 30px;
 }
 
 /* выбор крайних элементов */
-.benefits-column:last-child {
+.benefits__column:last-child {
   margin-right: 0;
 }
 
