@@ -125,6 +125,10 @@ img {
   align-items: center;
 }
 
+.header__list {
+  margin-left: auto;
+}
+
 /* блок навигации */
 .nav__list.list {
   display: flex;
@@ -162,7 +166,6 @@ img {
 .contact__list {
   display: flex;
   align-items: center;
-  margin-left: auto;
 }
 
 /* расстояние между мылом и тел */
@@ -849,7 +852,23 @@ textarea {
 }
 /* форматирование формы подписки футер конец */
 
-.portfolio-btn {
+/* блок филтры */
+.filter {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.filter__wrapper {
+  margin-left: 8px;
+}
+
+.filter__wrapper:first-child {
+  margin-left: 0;
+}
+
+.filter__btn {
   background: var(--background-btn-filter);
   font-family: inherit;
   font-weight: 500;
@@ -870,24 +889,20 @@ textarea {
     box-shadow var(--animation);
 }
 
-.portfolio-benefits {
+.filter__btn:hover,
+.filter__btn:focus {
+  background: var(--accent-color);
+  color: var(--header-hero-color);
+  /* shadow-middle */
+  box-shadow: var(--box-shadow-btn);
+  border-radius: 4px;
+}
+/* блок филтры */
+
+/* блок портфолио */
+.portfolio__benefits {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.portfolio-btn-filter {
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  margin-bottom: 50px;
-}
-
-.portfolio-btn-wrapper {
-  margin-left: 8px;
-}
-
-.portfolio-btn-wrapper:first-child {
-  margin-left: 0;
 }
 
 .portfolio-benefits-wrapper {
@@ -895,16 +910,6 @@ textarea {
   flex-wrap: wrap;
   padding: 0;
 }
-
-.portfolio-btn:hover,
-.portfolio-btn:focus {
-  background: var(--accent-color);
-  color: var(--header-hero-color);
-  /* shadow-middle */
-  box-shadow: var(--box-shadow-btn);
-  border-radius: 4px;
-}
-
 .portfolio-benefits-cards {
   padding: 20px 24px;
   border-left: 1px solid var(--header-line-color);
@@ -989,3 +994,4 @@ p.cards-overlay {
   /* test */
   /* border: 1px solid #f44336; */
 }
+/* конец блок портфолио */
