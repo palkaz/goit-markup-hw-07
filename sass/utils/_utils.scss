@@ -13,3 +13,49 @@
     overflow: hidden;
   }
 //   конец правильное скрытие заголовка
+// полоска в хедере 
+.effect {
+  position: relative;
+}
+
+.effect::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  bottom: 0px;
+  background: var(--accent-color);
+  border-radius: 2px;
+  // переход 
+  transform: scaleX(0);
+  transition: var(--animation);
+}
+
+.effect:hover::after {
+  transform: scaleX(1);
+}
+// текущаяя страница в хедере цвет 
+.link.current {
+  color: var(--accent-color);
+}
+
+// текущаяя страница полоска в хедере еффект 
+.effect.link.current::after {
+  transform: scaleX(1);
+}
+
+// стили для футера 
+.footer__list .contact__list {
+  flex-direction: column;
+  align-items: normal;
+}
+
+.footer__list .contact__item {
+  margin-right: 0;
+  margin-bottom: 9px;
+  color: var(--footer-contact);
+}
+// обрезка крайнего маржина 
+.contact__item:last-child {
+  margin: 0;
+}

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --accent-color: #2196f3;
   --accent-color-hover: #188ce8;
@@ -33,6 +34,49 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.effect {
+  position: relative;
+}
+
+.effect::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  bottom: 0px;
+  background: var(--accent-color);
+  border-radius: 2px;
+  transform: scaleX(0);
+  transition: var(--animation);
+}
+
+.effect:hover::after {
+  transform: scaleX(1);
+}
+
+.link.current {
+  color: var(--accent-color);
+}
+
+.effect.link.current::after {
+  transform: scaleX(1);
+}
+
+.footer__list .contact__list {
+  flex-direction: column;
+  align-items: normal;
+}
+
+.footer__list .contact__item {
+  margin-right: 0;
+  margin-bottom: 9px;
+  color: var(--footer-contact);
+}
+
+.contact__item:last-child {
+  margin: 0;
 }
 
 .container {
@@ -90,6 +134,31 @@
 .backdrop__btn:hover {
   fill: var(--accent-color);
   transition: fill var(--animation);
+}
+
+.form__btn {
+  text-transform: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  color: var(--header-hero-color);
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: rgba(0, 0, 0, 0.001);
+  cursor: pointer;
+  transition: color var(--animation);
+}
+
+.form__btn:focus,
+.form__btn:hover {
+  background: var(--accent-color-hover);
 }
 
 .backdrop {
@@ -200,6 +269,162 @@ textarea {
   color: rgba(117, 117, 117, 0.5);
 }
 
+.checkbox__input {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.checkbox__span {
+  height: 16px;
+  margin-right: 7px;
+}
+
+.checkbox__input:checked + .checkbox__span {
+  fill: rgba(117, 117, 117, 0);
+  background-image: url(../images/check-ok.svg);
+  background-size: contain;
+  background-origin: border-box;
+  transition: fill var(--animation), background-image var(--animation);
+}
+
+.checkbox__input:focus + .checkbox__span {
+  fill: var(--accent-color);
+  transition: fill var(--animation);
+}
+
+.form__data.checkbox {
+  margin-top: 25px;
+}
+
+.checkbox__label {
+  display: flex;
+  margin-left: 13px;
+  color: var(--txt-color);
+  align-items: center;
+}
+
+.checkbox__link {
+  color: var(--accent-color);
+  text-decoration: underline var(--accent-color);
+  margin-left: 5px;
+}
+
+.hero {
+  max-width: 1600px;
+  background-color: var(--header-bg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: radial-gradient(at center, var(--hero-overlay), var(--hero-overlay)), url(../images/img-hero.jpg);
+  color: var(--header-hero-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.logo {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  margin-right: 93px;
+}
+
+.logo__secondary {
+  color: var(--header-hero-color);
+}
+
+.logo__primary {
+  color: var(--title-color);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid var(--header-line-color);
+}
+
+.header__link.logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.header__list {
+  margin-left: auto;
+}
+
+.nav__list.list {
+  display: flex;
+}
+
+.nav__item {
+  margin-right: 50px;
+  position: relative;
+}
+
+.nav__link.link {
+  display: flex;
+  align-items: center;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+.nav__link.link {
+  display: flex;
+  align-items: center;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+.nav__list:last-child {
+  margin: 0;
+}
+
+.contact__list {
+  display: flex;
+  align-items: center;
+}
+
+.contact__item {
+  margin-right: 50px;
+}
+
+цвет иконки
+.contact__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contact__link.link {
+  display: flex;
+  align-items: center;
+}
+
 .link {
   text-decoration: none;
   color: inherit;
@@ -253,5 +478,12 @@ body {
 img {
   display: block;
   max-width: 100%;
+}
+
+.accent a:hover,
+.accent a:focus {
+  color: var(--accent-color);
+  /* переход */
+  transition: color var(--animation);
 }
 /*# sourceMappingURL=main.css.map */

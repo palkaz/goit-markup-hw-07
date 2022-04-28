@@ -25,3 +25,11 @@ body {
     max-width: 100%;
   }
 //   конец Базовые стили
+
+// акцент цветом
+.accent a:hover,
+.accent a:focus {
+  color: var(--accent-color);
+  /* переход */
+  transition: color var(--animation);
+}
