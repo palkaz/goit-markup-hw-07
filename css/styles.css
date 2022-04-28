@@ -585,6 +585,36 @@ textarea {
 .benefits__column:last-child {
   margin-right: 0;
 }
+/* конец секция преимущества */
+
+/* секция примеры */
+.example {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.example__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--title-color);
+
+  margin-bottom: 50px;
+}
+
+.example__wrapper {
+  display: flex;
+}
+
+.exemple__img:first-child {
+  margin: 0;
+}
+
+.exemple__img {
+  margin-left: 30px;
+}
+/* конец секция примеры */
 
 .userpic {
   background-color: var(--background-btn-filter);
@@ -629,15 +659,6 @@ textarea {
   margin-bottom: 16px;
 }
 
-.h2-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  color: var(--title-color);
-
-  margin-bottom: 50px;
-}
 /* блок иконки соцсетей */
 /* позицианирование иконок */
 .socials__list {
@@ -724,22 +745,6 @@ textarea {
   fill: currentColor;
 }
 
-.example {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.example-wrapper {
-  display: flex;
-}
-
-.exemple-img:first-child {
-  margin: 0;
-}
-
-.exemple-img {
-  margin-left: 30px;
-}
 /* блок футер */
 .footer {
   background-color: var(--background-hero-footer);
