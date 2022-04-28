@@ -70,6 +70,16 @@ ul {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+.h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--title-color);
+
+  margin-bottom: 50px;
+}
 ul {
   padding-inline-start: 0px;
 }
@@ -561,7 +571,7 @@ textarea {
 }
 /* размещение иконок преимущества*/
 .benefits__list,
-.clients-wrapper {
+.clients__wrapper {
   display: flex;
 }
 
@@ -593,16 +603,6 @@ textarea {
   padding-bottom: 94px;
 }
 
-.example__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  color: var(--title-color);
-
-  margin-bottom: 50px;
-}
-
 .example__wrapper {
   display: flex;
 }
@@ -616,6 +616,7 @@ textarea {
 }
 /* конец секция примеры */
 
+/* секция карточки */
 .userpic {
   background-color: var(--background-btn-filter);
 
@@ -623,15 +624,15 @@ textarea {
   padding-bottom: 94px;
 }
 
-.userpic-line {
+.userpic__line {
   display: flex;
 }
 
-.userpic-wrapper:first-child {
+.userpic__wrapper:first-child {
   margin: 0;
 }
 
-.userpic-wrapper {
+.userpic__wrapper {
   margin-left: 30px;
   background-color: var(--header-hero-color);
 
@@ -640,7 +641,7 @@ textarea {
   border-radius: 0px 0px 4px 4px;
 }
 
-.userpic-name {
+.userpic__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -649,15 +650,16 @@ textarea {
   text-align: center;
 }
 
-.userpic-wrapper-txt {
+.userpic__cards {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.userpic-txt {
+.userpic__txt {
   text-align: center;
   margin-bottom: 16px;
 }
+/* секция карточки */
 
 /* блок иконки соцсетей */
 /* позицианирование иконок */
@@ -704,25 +706,26 @@ textarea {
 }
 /* конец блока иконок соцсетей */
 
+/* секция наши клиенты */
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-/* иконки блочные, размеры их */
-.clients-list {
-  width: 170px;
-  height: 92px;
-}
-
 /* размещение иконок наши клиенты */
-.clients-wrapper {
+.clients__wrapper {
   fill: var(--icon-items-color);
   justify-content: space-between;
 }
 
+/* иконки блочные, размеры их */
+.clients__list {
+  width: 170px;
+  height: 92px;
+}
+
 /* иконки блочные, расположение их */
-.clients-item {
+.clients__item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -737,13 +740,14 @@ textarea {
   transition: fill var(--animation), border var(--animation);
 }
 
-.clients-item:hover,
-.clients-item:focus {
+.clients__item:hover,
+.clients__item:focus {
   background-color: var(--header-hero-color);
   color: var(--accent-color);
   border: var(--accent-color) 1px solid;
   fill: currentColor;
 }
+/* конец секции наши клиенты */
 
 /* блок футер */
 .footer {
