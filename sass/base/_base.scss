@@ -30,6 +30,13 @@ body {
 .accent a:hover,
 .accent a:focus {
   color: var(--accent-color);
-  /* переход */
+  // переход 
   transition: color var(--animation);
 }
+// блок портфолио 
+.portfolio__benefits {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+// конец блок портфолио 

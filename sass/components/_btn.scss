@@ -86,3 +86,35 @@
     background: var(--accent-color-hover);
   }
 //    конец конпка отправка формы в бекдропе
+
+
+// кнопка футер отправка формы 
+.footer__btn {
+  width: 200px;
+  margin-left: 12px;
+  padding-left: 29px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: roboto, bold;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  color: var(--header-hero-color);
+  background-color: var(--accent-color);
+  box-shadow: var(--footer-btn-shadow);
+
+  border: 1px solid var(--footer-form-border);
+  border-radius: 4px;
+  transition: background-color var(--animation), box-shadow var(--animation);
+
+  cursor: pointer;
+}
+
+.footer__icon {
+  margin-left: 10px;
+}
+// кнопка футер отправка формы 
