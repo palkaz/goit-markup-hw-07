@@ -23,31 +23,7 @@
   --footer-btn-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-body {
-  color: var(--txt-color);
-  font-family: roboto, sans-serif;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-
-/* правильное скрытие заголовка */
-.portfolio,
-.portfolio__exemple,
-.benefits__header {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
+/* сброс стадартных стилей */
 /* сброс стилей для ссылок */
 .link {
   text-decoration: none;
@@ -71,16 +47,6 @@ ul {
   margin-top: 0;
   margin-bottom: 0;
 }
-
-.h2 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  color: var(--title-color);
-
-  margin-bottom: 50px;
-}
 ul {
   padding-inline-start: 0px;
 }
@@ -92,6 +58,42 @@ h4 :last-child,
 p :last-child {
   margin-bottom: 0;
 }
+/* конец сброс стадартных стилей */
+
+/* Базовые стили */
+body {
+  color: var(--txt-color);
+  font-family: roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* правильное скрытие заголовка */
+.hide {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* конец правильное скрытие заголовка */
+
+.h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--title-color);
+
+  margin-bottom: 50px;
+}
 
 /* делаем картинки из строчных в блочные
 заполнение 100% */
@@ -99,6 +101,7 @@ img {
   display: block;
   max-width: 100%;
 }
+/* конец Базовые стили */
 
 .container {
   width: 1200px;
@@ -107,7 +110,7 @@ img {
   margin-right: auto;
   margin-left: auto;
 }
-
+/* блок хедер */
 /* размеры шрифта навигация контакты */
 .header {
   font-weight: 500;
@@ -129,6 +132,7 @@ img {
 .header__list {
   margin-left: auto;
 }
+/*конец  блок хедер */
 
 /* блок навигации */
 .nav__list.list {
@@ -295,7 +299,7 @@ img {
 
   margin-bottom: 30px;
 }
-
+/* кнопка заказ услуги */
 .hero__btn {
   background: var(--accent-color);
   color: var(--header-hero-color);
@@ -322,6 +326,7 @@ img {
 .hero__btn:active {
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+/* конец кнопка заказ услуги */
 /* конец героя */
 
 /* модальное окно backdrop */
@@ -527,6 +532,8 @@ textarea {
   text-decoration: underline var(--accent-color);
   margin-left: 5px;
 }
+/*конец  работы над чекбоксом */
+
 /* конпка в бекдропе */
 .form__btn {
   text-transform: none;
@@ -822,7 +829,7 @@ textarea {
   color: var(--header-hero-color);
   background-color: var(--background-hero-footer);
 }
-
+/* кнопка футер отправка формы */
 .footer__btn {
   width: 200px;
   margin-left: 12px;
@@ -851,6 +858,7 @@ textarea {
 .footer__icon {
   margin-left: 10px;
 }
+/* кнопка футер отправка формы */
 /* форматирование формы подписки футер конец */
 
 /* блок филтры */
@@ -868,7 +876,6 @@ textarea {
 .filter__wrapper:first-child {
   margin-left: 0;
 }
-
 .filter__btn {
   background: var(--background-btn-filter);
   font-family: inherit;
