@@ -1,0 +1,57 @@
+// кнопка заказ услуги
+.hero__btn {
+  background: var(--accent-color);
+  color: var(--header-hero-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  padding: 10px 32px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.hero__btn:hover,
+.hero__btn:focus {
+  background: var(--accent-color-hover);
+}
+
+.hero__btn:active {
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+// конец кнопка заказ услуги
+
+// кнопка закрытия бекдропа
+.backdrop__btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 8px;
+  right: 8px;
+  padding: 0;
+  min-height: 30px;
+  min-width: 30px;
+
+//   color icon close
+  border-radius: 50%;
+  border: 1px solid var(--form-filed-shadow);
+  outline: 1px solid var(--form-filed-shadow);
+
+  background-color: rgba(255, 255, 255, 0);
+
+  cursor: pointer;
+}
+
+.backdrop__btn:focus,
+.backdrop__btn:hover {
+  fill: var(--accent-color);
+  transition: fill var(--animation);
+}
+// конец кнопка закрытия бекдропа
