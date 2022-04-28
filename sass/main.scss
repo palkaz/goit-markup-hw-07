@@ -1,21 +1,3 @@
 @import"./variables/variables";
-
-// утилита
-@import"./utils/normalize";
-@import"./utils/hide";
-
-// базовые стили
-@import"./base/base";
-
-// компоненты
 @import"./components/components";
-@import"./components/conteiner";
-@import"./components/btn";
-@import"./components/header";
-@import"./components/hero";
-@import"./components/backdrop";
-@import"./components/checkbox";
-
-
-
-
+@import"./utils/utils";
