@@ -33,6 +33,7 @@ body {
 
 /* правильное скрытие заголовка */
 .portfolio,
+.portfolio__exemple,
 .benefits__header {
   position: absolute;
   width: 1px;
@@ -905,55 +906,44 @@ textarea {
   padding-bottom: 94px;
 }
 
-.portfolio-benefits-wrapper {
+/* конец блок портфолио */
+
+/* блок примеры работ */
+.exemple__wrapper {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
 }
-.portfolio-benefits-cards {
-  padding: 20px 24px;
-  border-left: 1px solid var(--header-line-color);
-  border-bottom: 1px solid var(--header-line-color);
-  border-right: 1px solid var(--header-line-color);
-}
 
-.portfolio-benefits-title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--title-color);
-}
-
-.portfolio-exemple {
+.exemple__cards {
   margin-right: 30px;
   margin-bottom: 30px;
 }
 
 /* тень на карточке */
-.portfolio-shadows:hover,
-.portfolio-shadows:focus {
+.exemple__shadows:hover,
+.exemple__shadows:focus {
   display: block;
   box-shadow: var(--box-shadow-cards);
   /* переход */
   transition: box-shadow var(--animation);
 }
 
-.portfolio-exemple:nth-child(3n) {
+.exemple__cards:nth-child(3n) {
   margin-right: 0;
 }
 
-.portfolio-exemple:nth-last-child(-n + 3) {
+.exemple__cards:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
 /* test overlay */
-.portfolio-box {
+.exemple__box {
   position: relative;
   /* обрезка за карочкой */
   overflow: hidden;
 }
 
-.portfolio-box::before {
+.exemple__box::before {
   position: absolute;
   content: "";
   width: 100%;
@@ -965,13 +955,13 @@ textarea {
 }
 
 /* анимация при ховере */
-.portfolio-exemple:hover .portfolio-box::before,
-.portfolio-exemple:hover .portfolio-box-text {
+.exemple__cards:hover .exemple__box::before,
+.exemple__cards:hover .exemple__meta {
   transform: translateY(0%);
 }
 
 /* контейнер для текста на карточке */
-.portfolio-box-text {
+.exemple__meta {
   content: " ";
   position: absolute;
   width: 100%;
@@ -985,7 +975,7 @@ textarea {
 }
 
 /* позиционирование текста */
-p.cards-overlay {
+.exemple__overlay {
   width: 322px;
   height: 168px;
   margin-top: 63px;
@@ -994,4 +984,19 @@ p.cards-overlay {
   /* test */
   /* border: 1px solid #f44336; */
 }
-/* конец блок портфолио */
+
+.exemple__text {
+  padding: 20px 24px;
+  border-left: 1px solid var(--header-line-color);
+  border-bottom: 1px solid var(--header-line-color);
+  border-right: 1px solid var(--header-line-color);
+}
+
+.exemple__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+}
+/* конец блок примеры работ */
