@@ -365,7 +365,7 @@ textarea {
   transition: var(--animation);
 }
 
-.form__data:focus-within > .form__icon {
+.form__field:focus-within > .form__icon {
   fill: var(--accent-color);
   transition: var(--animation);
 }
