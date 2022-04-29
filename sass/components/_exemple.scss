@@ -36,25 +36,23 @@
 // test overlay 
 .exemple__box {
   position: relative;
-  // обрезка за карочкой 
+  /* обрезка за карочкой */
   overflow: hidden;
-  &::before {
-    position: absolute;
-    content: " ";
-    width: 100%;
-    height: 100%;
-    transform: translateY(101%);
-    background: var(--color-background-overlay);
-    // анимация 
-    transition: var(--animation);
-  }
-  &:hover .exemple__box::before {
-  transform: translateY(0%) 
-   }
- 
-   &:hover .exemple__meta {
+}
+.exemple__box::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  transform: translateY(101%);
+  background: var(--color-background-overlay);
+  /* анимация */
+  transition: var(--animation);
+}
+/* анимация при ховере */
+.exemple__cards:hover .exemple__box::before,
+.exemple__cards:hover .exemple__meta {
   transform: translateY(0%);
-    }
 }
 
 .exemple__meta {
