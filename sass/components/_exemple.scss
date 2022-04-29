@@ -38,8 +38,7 @@
   position: relative;
   /* обрезка за карочкой */
   overflow: hidden;
-}
-.exemple__box::before {
+ &::before {
   position: absolute;
   content: "";
   width: 100%;
@@ -48,6 +47,7 @@
   background: var(--color-background-overlay);
   /* анимация */
   transition: var(--animation);
+}
 }
 /* анимация при ховере */
 .exemple__cards:hover .exemple__box::before,
