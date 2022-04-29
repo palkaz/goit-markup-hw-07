@@ -209,7 +209,7 @@ img {
   transition: fill var(--animation);
 }
 
-.backdrop__btn:focus:hover {
+.backdrop__btn:hover {
   fill: var(--accent-color);
   transition: fill var(--animation);
 }
@@ -287,7 +287,7 @@ img {
   visibility: hidden;
 }
 
-.backdrop.backdrop__wrapper {
+.backdrop__wrapper {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -337,9 +337,21 @@ textarea {
   margin-left: 12px;
 }
 
+.form__name {
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  border: 1px solid var(--form-filed-shadow);
+  outline: 1px solid var(--form-filed-shadow);
+  border-radius: 4px;
+}
+
 .form__name:focus-visible {
   outline: 1px solid var(--accent-color);
   transition: var(--animation);
+}
+
+.form__textarea {
   width: 100%;
   height: 40px;
   padding-left: 42px;
@@ -348,42 +360,33 @@ textarea {
   border-radius: 4px;
 }
 
-.form__name .form__textarea {
-  width: 100%;
-  height: 40px;
-  padding-left: 42px;
-  border: 1px solid var(--form-filed-shadow);
-  outline: 1px solid var(--form-filed-shadow);
-  border-radius: 4px;
-}
-
-.form__name .form__textarea:focus-visible {
+.form__textarea:focus-visible {
   outline: 1px solid var(--accent-color);
   transition: var(--animation);
 }
 
-.form__name .form__data:focus-within > .form__icon {
+.form__data:focus-within > .form__icon {
   fill: var(--accent-color);
   transition: var(--animation);
 }
 
-.form__name .form__wrapper {
+.form__wrapper {
   line-height: 14px;
   letter-spacing: 0.01em;
   margin-bottom: 4px;
   color: var(--txt-color);
 }
 
-.form__name .form__textarea.comment {
+.form__textarea.comment {
   height: 120px;
   padding: 12px 16px;
 }
 
-.form__name .form__textarea::placeholder {
+.form__textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form__name .checkbox__input {
+.checkbox__input {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -396,12 +399,12 @@ textarea {
   margin: -1px;
 }
 
-.form__name .checkbox__span {
+.checkbox__span {
   height: 16px;
   margin-right: 7px;
 }
 
-.form__name .checkbox__input:checked + .checkbox__span {
+.checkbox__input:checked + .checkbox__span {
   fill: rgba(117, 117, 117, 0);
   background-image: url(../images/check-ok.svg);
   background-size: contain;
@@ -409,23 +412,23 @@ textarea {
   transition: fill var(--animation), background-image var(--animation);
 }
 
-.form__name .checkbox__input:focus + .checkbox__span {
+.checkbox__input:focus + .checkbox__span {
   fill: var(--accent-color);
   transition: fill var(--animation);
 }
 
-.form__name .form__data.checkbox {
+.form__data.checkbox {
   margin-top: 25px;
 }
 
-.form__name .checkbox__label {
+.checkbox__label {
   display: flex;
   margin-left: 13px;
   color: var(--txt-color);
   align-items: center;
 }
 
-.form__name .checkbox__link {
+.checkbox__link {
   color: var(--accent-color);
   text-decoration: underline var(--accent-color);
   margin-left: 5px;
@@ -606,7 +609,7 @@ textarea {
 
 .exemple__box::before {
   position: absolute;
-  content: "";
+  content: " ";
   width: 100%;
   height: 100%;
   transform: translateY(101%);
@@ -908,5 +911,10 @@ textarea {
   color: var(--header-hero-color);
   box-shadow: var(--box-shadow-btn);
   border-radius: 4px;
+}
+
+.portfolio__benefits {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 /*# sourceMappingURL=main.css.map */

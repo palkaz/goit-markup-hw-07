@@ -51,15 +51,16 @@
 
   cursor: pointer;
  
-  &:focus{
+  &:focus {
     fill: var(--accent-color);
     transition: fill var(--animation);
   }
-  &:focus:hover {
-  fill: var(--accent-color);
-  transition: fill var(--animation);
+  &:hover {
+   fill: var(--accent-color);
+   transition: fill var(--animation);
+  }
 }
-}
+
 
 // конец кнопка закрытия бекдропа
 

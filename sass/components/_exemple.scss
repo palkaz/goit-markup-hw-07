@@ -10,15 +10,6 @@
   margin-bottom: 30px;
 }
 
-// тень на карточке 
-// .exemple__shadows:hover,
-// .exemple__shadows:focus {
-//   display: block;
-//   box-shadow: var(--box-shadow-cards);
-//   // переход 
-//   transition: box-shadow var(--animation);
-// }
-
 .exemple__shadows {
   &:hover {
     display: block;
@@ -49,7 +40,7 @@
   overflow: hidden;
   &::before {
     position: absolute;
-    content: "";
+    content: " ";
     width: 100%;
     height: 100%;
     transform: translateY(101%);
@@ -58,11 +49,12 @@
     transition: var(--animation);
   }
   &:hover .exemple__box::before {
+  transform: translateY(0%) 
+   }
+ 
+   &:hover .exemple__meta {
   transform: translateY(0%);
-}
- &:hover .exemple__meta {
-  transform: translateY(0%);
-}
+    }
 }
 
 .exemple__meta {

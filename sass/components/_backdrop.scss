@@ -22,33 +22,36 @@
     pointer-events: none;
     visibility: hidden;
   }
-  &.backdrop__wrapper {
-    position: absolute;
   
-    top: 50%;
-    left: 50%;
-  
-    transform: translate(-50%, -50%);
-  
-    min-height: 581px;
-    min-width: 528px;
-    padding: 40px;
-  
-    // цвет текста 
-    color: var(--title-color);
-  
-    background: var(--header-hero-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-  }
 }
+
+.backdrop__wrapper {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  min-height: 581px;
+  min-width: 528px;
+  padding: 40px;
+
+  // цвет текста 
+  color: var(--title-color);
+
+  background: var(--header-hero-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
 // форматирование формы бекдропа 
 textarea {
     resize: none;
   }
-  
-  .form__data {
+
+ .form__data {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -80,11 +83,11 @@ textarea {
     margin-left: 12px;
   }
 
-  .form__name {
-    &:focus-visible {
+    .form__name {
+      &:focus-visible {
     outline: 1px solid var(--accent-color);
     transition: var(--animation);
-    
+      }
     width: 100%;
     height: 40px;
     padding-left: 42px;
@@ -92,9 +95,10 @@ textarea {
     border: 1px solid var(--form-filed-shadow);
     outline: 1px solid var(--form-filed-shadow);
     border-radius: 4px;
-  }
+    }
+  
    
-  .form__textarea{
+  .form__textarea {
     &:focus-visible {
     outline: 1px solid var(--accent-color);
     transition: var(--animation);
@@ -110,12 +114,11 @@ textarea {
   }
 
   // цвет и анимация иконки в инпуте при фокусе 
-  .form__data { 
-    &:focus-within > .form__icon {
+  .form__data:focus-within > .form__icon {
     fill: var(--accent-color);
     transition: var(--animation);
-  }
-}
+  } 
+
   
   .form__wrapper {
     line-height: 14px;
@@ -132,9 +135,8 @@ textarea {
   
   .form__textarea{
     &::placeholder {
-    color: rgba(117, 117, 117, 0.5);
+    color: rgba(117, 117, 117, 0.5);}
   }
-}
 
   
 .checkbox__input {
@@ -157,8 +159,7 @@ textarea {
     margin-right: 7px;
   }
   
-  .checkbox__input{
-    &:checked + .checkbox__span {
+  .checkbox__input:checked + .checkbox__span {
     fill: rgba(117, 117, 117, 0);
     background-image: url(../images/check-ok.svg);
     background-size: contain;
@@ -166,15 +167,14 @@ textarea {
   
     transition: fill var(--animation), background-image var(--animation);
   }
-}
   
 
-  .checkbox__input{
-    &:focus + .checkbox__span {
+
+  .checkbox__input:focus + .checkbox__span {
     fill: var(--accent-color);
     transition: fill var(--animation);
   }
-}
+
   
   .form__data.checkbox {
     margin-top: 25px;
@@ -190,6 +190,5 @@ textarea {
   .checkbox__link {
     color: var(--accent-color);
     text-decoration: underline var(--accent-color);
-    margin-left: 5px;
+    margin-left: 5px;  
   }
-}
