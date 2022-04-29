@@ -9,17 +9,17 @@
   
     font-size: 16px;
     line-height: 20px;
-  }
-  
-  .footer__form input::placeholder {
-    padding-left: 16px;
-  }
-  
-  .footer__form button:hover,
-  .footer__form button:focus {
+    & input::placeholder {
+      padding-left: 16px;
+    }
+    & button:hover {
+      background-color: var(--accent-color-hover);
+    }
+    & button:focus {
     background-color: var(--accent-color-hover);
   }
-  
+  }
+    
   .footer__input {
     width: 358px;
     border: 1px solid rgba(255, 255, 255, 0.3);

@@ -32,11 +32,19 @@
     transition: fill var(--animation), border var(--animation);
   }
   
-  .clients__item:hover,
-  .clients__item:focus {
+  .clients__item {
+    &:hover{
+      background-color: var(--header-hero-color);
+      color: var(--accent-color);
+      border: var(--accent-color) 1px solid;
+      fill: currentColor;
+    }
+
+    &:focus {
     background-color: var(--header-hero-color);
     color: var(--accent-color);
     border: var(--accent-color) 1px solid;
     fill: currentColor;
   }
+}
   // конец секции наши клиенты 

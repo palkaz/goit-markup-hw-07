@@ -11,46 +11,60 @@
 }
 
 // тень на карточке 
-.exemple__shadows:hover,
-.exemple__shadows:focus {
-  display: block;
-  box-shadow: var(--box-shadow-cards);
+// .exemple__shadows:hover,
+// .exemple__shadows:focus {
+//   display: block;
+//   box-shadow: var(--box-shadow-cards);
+//   // переход 
+//   transition: box-shadow var(--animation);
+// }
+
+.exemple__shadows {
+  &:hover {
+    display: block;
+    box-shadow: var(--box-shadow-cards);
+   }
+  &:focus {
+   display: block;
+   box-shadow: var(--box-shadow-cards);
+   }
   // переход 
   transition: box-shadow var(--animation);
 }
 
-.exemple__cards:nth-child(3n) {
+
+.exemple__cards{
+  &:nth-child(3n) {
   margin-right: 0;
+  }
+  &:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
 }
 
-.exemple__cards:nth-last-child(-n + 3) {
-  margin-bottom: 0;
-}
 // test overlay 
 .exemple__box {
   position: relative;
   // обрезка за карочкой 
   overflow: hidden;
-}
-
-.exemple__box::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  transform: translateY(101%);
-  background: var(--color-background-overlay);
-  // анимация 
-  transition: var(--animation);
-}
-
-// анимация при ховере 
-.exemple__cards:hover .exemple__box::before,
-.exemple__cards:hover .exemple__meta {
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    transform: translateY(101%);
+    background: var(--color-background-overlay);
+    // анимация 
+    transition: var(--animation);
+  }
+  &:hover .exemple__box::before {
   transform: translateY(0%);
 }
+ &:hover .exemple__meta {
+  transform: translateY(0%);
+}
+}
 
-// контейнер для текста на карточке 
 .exemple__meta {
   content: " ";
   position: absolute;

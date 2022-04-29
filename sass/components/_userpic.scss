@@ -10,10 +10,11 @@
     display: flex;
   }
   
-  .userpic__wrapper:first-child {
+  .userpic__wrapper{
+    &:first-child {
     margin: 0;
   }
-  
+}
   .userpic__wrapper {
     margin-left: 30px;
     background-color: var(--header-hero-color);

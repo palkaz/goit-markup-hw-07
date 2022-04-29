@@ -12,8 +12,10 @@
 }
 
 // убираем крайний отступ 
-.socials__item:last-child {
+.socials__item{
+  &:last-child {
   margin-right: 0;
+}
 }
 
 // центрирование иконок 
@@ -35,11 +37,22 @@
 }
 
 // изменение цвета иконок 
-.socials__link:hover,
-.socials__link:focus {
+// .socials__link:hover,
+// .socials__link:focus {
+//   background-color: var(--accent-color);
+//   color: var(--header-hero-color);
+//   fill: currentColor;
+// }
+.socials__link {
+  &:hover {
   background-color: var(--accent-color);
   color: var(--header-hero-color);
-  fill: currentColor;
+  fill: currentColor; }
+  &:focus {
+      background-color: var(--accent-color);
+      color: var(--header-hero-color);
+      fill: currentColor;
+}
 }
 // конец блока иконок соцсетей 
 

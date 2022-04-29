@@ -8,11 +8,11 @@
   
   .filter__wrapper {
     margin-left: 8px;
+    &:first-child {
+      margin-left: 0;
+    }
   }
   
-  .filter__wrapper:first-child {
-    margin-left: 0;
-  }
   .filter__btn {
     background: var(--background-btn-filter);
     font-family: inherit;
@@ -32,14 +32,20 @@
     // переход 
     transition: color var(--animation), background var(--animation),
       box-shadow var(--animation);
-  }
-  
-  .filter__btn:hover,
-  .filter__btn:focus {
+      &:hover {
     background: var(--accent-color);
     color: var(--header-hero-color);
     // shadow-middle 
     box-shadow: var(--box-shadow-btn);
     border-radius: 4px;
   }
+  &:focus {
+    background: var(--accent-color);
+    color: var(--header-hero-color);
+    // shadow-middle 
+    box-shadow: var(--box-shadow-btn);
+    border-radius: 4px;
+  }
+  }
+  
   // блок филтры 

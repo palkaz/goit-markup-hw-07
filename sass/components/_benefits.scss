@@ -34,7 +34,9 @@
   }
   
   // выбор крайних элементов 
-  .benefits__column:last-child {
+  .benefits__column{
+    &:last-child {
     margin-right: 0;
   }
+}
   // конец секция преимущества 
